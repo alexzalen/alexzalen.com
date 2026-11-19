@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#808080">
 <link rel="icon" href="data:,">
 <script src="tone.js"></script>
+<script src="version.js"></script>
 <script src="i18n.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -36,9 +37,10 @@
   </div>
 </main>
 <footer>
-  <span data-i18n="foot.made">made with Claude</span>
+  <span id="made" tabindex="0" aria-describedby="verpop" data-i18n="foot.made">made with Claude</span>
   <a href="credits.html" data-i18n="foot.credits">credits</a>
 </footer>
+<div id="verpop" role="tooltip" hidden></div>
 <noscript><p class="ns">This page needs JavaScript to draw the brain.</p></noscript>
 <script src="brain.js"></script>
 </body>
