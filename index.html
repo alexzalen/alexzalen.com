@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="title.index">Alex Zalen</title>
+<meta name="description" content="A rotatable ASCII brain." data-i18n-attr="content:meta.desc">
+<meta name="theme-color" content="#808080">
+<link rel="icon" href="data:,">
+<script src="tone.js"></script>
+<script src="i18n.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ctl" role="group" aria-label="Display"><label>tone <input id="tone" type="range" min="0" max="255" value="128" aria-label="Background tone, dark to light"></label><div id="depth" role="radiogroup" aria-labelledby="depthlbl"><span id="depthlbl">depth</span><span class="seg"><button type="button" role="radio" id="d3" data-t="1" aria-checked="true" tabindex="0">3D</button><button type="button" role="radio" id="dc" data-t="0" aria-checked="false" tabindex="-1">contour</button></span></div><output id="rgb" for="tone">bg 128 128 128</output><button type="button" id="reset" aria-label="Reset tone, depth and colours to defaults" aria-disabled="true">reset</button><div id="pal" role="radiogroup" aria-label="Depth colours"></div><button type="button" id="more" aria-expanded="false" aria-controls="col" aria-label="More colour controls">colour</button><div id="col" role="group" aria-label="Colour" hidden><label class="opp"><span id="yblbl">yellow—blue</span> <input id="hyb" type="range" min="-100" max="100" step="1" value="-45" aria-label="Depth colour, yellow to blue"></label><label class="opp"><span id="grlbl">green—red</span> <input id="hgr" type="range" min="-100" max="100" step="1" value="-59" aria-label="Depth colour, green to red"></label><div id="bands" role="radiogroup" aria-labelledby="bandslbl"><span id="bandslbl">bands</span><span class="seg"><button type="button" role="radio" id="bsoft" data-b="0" aria-checked="true" tabindex="0">soft</button><button type="button" role="radio" id="bstep" data-b="100" aria-checked="false" tabindex="-1">stepped</button></span></div></div></div>
+<main>
+  <div id="stage">
+    <div id="scene">
+      <canvas id="brain" role="img" tabindex="0" aria-label="A rotatable 3D human brain drawn in text characters. Drag to rotate, or use the arrow keys." data-i18n-attr="aria-label:brain.aria"></canvas>
+      <svg id="leaders" aria-hidden="true"></svg>
+      <div id="labels"></div>
+    </div>
+    <p id="info" aria-hidden="true"></p><p id="info-sr" class="sr-only" aria-live="polite"></p>
+    <p id="hint"><svg width="34" height="16" viewBox="0 0 34 16" aria-hidden="true"><path d="M8 11.5Q17 4 26 11.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M2 14.5L6.2 6.8L11.4 13Z M32 14.5L27.8 6.8L22.6 13Z" fill="currentColor"/></svg> <span data-i18n="hint">drag to rotate</span></p>
+  </div>
+  <div id="id">
+    <button id="sig" type="button" aria-pressed="false" aria-label="Alex Zalen, they/them" title="show/hide bio around the brain" data-i18n-attr="title:sig.title"><span id="nm">Alex Zalen</span> <span class="pr">they/them</span></button>
+    <p id="contact" hidden><span data-i18n="contact">contact:</span> <a href="mailto:alex.zalen@ru.nl" aria-label="alex.zalen@ru.nl"><span id="ct">alex.zalen@ru.nl</span></a></p>
+    <ul id="bio" class="sr-only" aria-label="About Alex Zalen" data-i18n-attr="aria-label:bio.aria">
+      <li>Alex Zalen (they/them)</li>
+      <li data-i18n="bio.msc">Second-year master's student, Cognitive Neuroscience, Donders Institute, Radboud University.</li>
+      <li data-i18n="bio.bg">Background: BA Philosophy of a Specific Discipline (Psychology), Erasmus University Rotterdam; BSc Psychology, Erasmus University Rotterdam; Computer Security Engineer, Saint Petersburg Electrotechnical University, Russia</li>
+      <li data-i18n="bio.intern">Currently interning in the lab of Prof. Marius Peelen (Visual Cognitive Neuroscience) at the Donders Centre for Cognition (DCC), on a project about the parahippocampal place area (PPA).</li>
+      <li><span data-i18n="bio.contact">Contact:</span> <a href="mailto:alex.zalen@ru.nl">alex.zalen@ru.nl</a></li>
+    </ul>
+  </div>
+</main>
+<footer>
+  <span data-i18n="foot.made">made with Claude</span>
+  <a href="credits.html" data-i18n="foot.credits">credits</a>
+</footer>
+<noscript><p class="ns">This page needs JavaScript to draw the brain.</p></noscript>
+<script src="brain.js"></script>
+</body>
+</html>

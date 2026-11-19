@@ -1,0 +1,31 @@
+<!-- DRAFT: Alex to review before publishing -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="title.prov">How it was made</title><link rel="icon" href="data:,">
+<script src="tone.js"></script><script src="i18n.js"></script><link rel="stylesheet" href="style.css"></head>
+<body><div class="page">
+<p data-i18n-html="prov.back"><a href="credits.html">&larr; back to credits</a></p>
+<h1 data-i18n="prov.h1">How it was made</h1>
+<h2 data-i18n="prov.h.models">Models</h2>
+<p data-i18n="prov.models">Claude Sonnet 5.5 was the main session. Claude Opus was used as research and planning agents (xhigh and high effort). Claude Sonnet 5.5 agents implemented the plans.</p>
+<h2 data-i18n="prov.h.ai">What the AI did</h2>
+<p data-i18n="prov.ai">It wrote the code, researched sources and planned the design.</p>
+<h2 data-i18n="prov.h.alex">What Alex decided</h2>
+<p data-i18n="prov.alex">The idea, the design direction, the data choices and the text.</p>
+<h2 id="live" data-i18n="prov.h.live">Live speaker numbers</h2>
+<p data-i18n="prov.live1">The numbers in the language list are estimated, live; modelled, not counted. Each language starts from its total number of speakers (first plus second language) in Ethnologue 2026, as listed on Wikipedia and read on 17 November 2026. Ethnologue gives these totals in millions. The figures are dated 21 February 2026, Ethnologue's usual yearly release date; this date is an assumption, as the exact date is not stated.</p>
+<p data-i18n="prov.live2">Gains (births among speakers and new learners) and losses (deaths and people who stop using the language) arrive as two independent random (Poisson) processes. The loss rate is the crude death rate of the main countries where the language is spoken (UN World Population Prospects 2024, values for 2023), weighted by a rough share of speakers. The gain rate is the loss rate plus the yearly growth. The growth is the trend between the Ethnologue editions of 2022 and 2026 where that trend is smooth; where an edition jumps because of a new way of counting, it is the UN projected population growth for 2026 of the same countries.</p>
+<p data-i18n="prov.live3">The page shows the expected value plus a random fluctuation that is computed from the clock, so every visitor sees the same number at the same moment. Nothing is downloaded for this.</p>
+<div class="tw"><table id="livetab"></table></div>
+<p data-i18n="prov.live4">Pointing at a language in the list opens a pop-up with the countries with the most speakers (up to five). The per-country numbers are modelled estimates in the same way, each country with its own starting figure, growth and loss rate; sources in provenance/country_speakers.md and provenance/country_speakers10.md.</p>
+<h2 data-i18n="prov.h.src">Sources</h2>
+<ul>
+<li data-i18n-html="prov.src1">Brain surface: FreeSurfer <em>fsaverage</em> template (Martinos Center for Biomedical Imaging, Massachusetts General Hospital), used under the FreeSurfer Software License Agreement, Part B (<a href="LICENSES/FreeSurfer-LICENSE.txt">licence text</a>). The mesh on this site is a modified version (10,242 vertices per hemisphere, 16-bit coordinates, 8-bit sulcal depth).</li>
+<li data-i18n-html="prov.src6">Real-brain glitch: the same fsaverage surface at fsaverage6 resolution (40,962 vertices per hemisphere, same licence; modified: 16-bit coordinates, 8-bit sulcal depth, ambient occlusion and curvature computed for this site). Colours, texture and vessels are procedural, not from a photograph.</li>
+<li data-i18n-html="prov.src2">Parahippocampal place area: scene-selective group parcels of Julian, J. B., Fedorenko, E., Webster, J., &amp; Kanwisher, N. (2012). An algorithmic method for functionally defining regions of interest in the ventral visual pathway. <em>NeuroImage</em>, 60(4), 2357&ndash;2364. doi:10.1016/j.neuroimage.2012.02.055</li>
+<li data-i18n-html="prov.src3">Amygdala outline: adapted from the Harvard-Oxford subcortical structural atlas (Harvard Center for Morphometric Analysis; packaged with FSL), licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; the adapted file amygdala.json is shared under the same licence (details and citations on the <a href="credits.html">credits</a> page).</li>
+<li data-i18n-html="prov.src4">Speaker numbers: Ethnologue 2026 totals as listed on Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers">List of languages by total number of speakers</a> (the editions of 2022 to 2026 from the page history); birth, death and growth rates from the UN <a href="https://population.un.org/wpp/">World Population Prospects 2024</a>, as processed by <a href="https://ourworldindata.org/">Our World in Data</a>.</li>
+<li data-i18n-html="prov.src5">Arabic and Urdu font: Kawkab Mono by Abdullah Arif, SIL Open Font License 1.1 (<a href="LICENSES/KawkabMono-OFL.txt">licence text</a>), cut down to the letters used on this site.</li>
+<li data-i18n-html="prov.src7">Digit font: Roboto Mono (The Roboto Mono Project Authors), SIL Open Font License 1.1 (<a href="LICENSES/RobotoMono-OFL.txt">licence text</a>), cut down to the digits 0–9.</li>
+</ul>
+</div></body></html>
