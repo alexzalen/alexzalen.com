@@ -1,1 +1,1 @@
-window.SITE_VERSION={v:"0.00",updated:"2026-11-19T22:53:00Z"};
+window.SITE_VERSION={v:"0.01",updated:"2026-11-20T09:46:00Z"};
